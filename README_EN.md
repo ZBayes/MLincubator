@@ -1,17 +1,19 @@
 # MLincubator
 
 ## An Experimental Machine Learning Framework
-The name looks domineering, but it is not that confusing technologically. It is constructed just based on some experience in the experiment and modeling process. **MLincubator is a frameork to manage your idea and code for better machine-learning experiment. **
+The name looks domineering, but it is not that confusing technologically. It is constructed just based on some experience in the experiment and modeling process.
+
+**MLincubator is a frameork to manage your idea and code for better machine-learning experiment.**
 
 Basically, since the idea has been basically raised, some of the functions have not yet been fully realized. Suggestion is welcomed.
 
 ### Basic Requirements for Experimentation
-- multiple programs
-    + Several programs are generated during your experiment, so it is important to store your programs and your result. 
+- multiple programs  
+    - Several programs are generated during your experiment, so it is important to store your programs and your result. 
 - Multiple parts
-    + In the various programs, some parts may be the same so we dont need to run again and the model can be save systematically. 
+    - In the various programs, some parts may be the same so we dont need to run again and the model can be save systematically. 
 - Log system
-    + Record and measure the results of various programs 
+    - Record and measure the results of various programs 
 
 ### Basic thoughts
 - Block
@@ -22,14 +24,14 @@ Basically, since the idea has been basically raised, some of the functions have 
     + Directly call the stored model for process calculation
 
 ### File Management
--data
-|-src_data
-|-model
-|-log
+-data  
+|-src_data  
+|-model  
+|-log  
 -src  
-|-data_explore
-|-data_process
-|-model
-|-eval
-|-util
-|-flow
+|-data_explore  
+|-data_process  
+|-model  
+|-eval  
+|-util  
+|-flow  

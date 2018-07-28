@@ -1,5 +1,5 @@
 # MLincubator
-The complete English version of the document will be released soon. If you wanna to read, Here is a [simple version](https://github.com/ZBayes/MLincubator/blob/master/README_EN.md). 
+The complete English version of the document will be released soon. If you wanna read, Here is a [simple version](https://github.com/ZBayes/MLincubator/blob/master/README_EN.md). 
 
 ## 一种面向实验的机器学习框架
 起名字一定要霸气，技术含量不是很高，只是自己在平时做实验和建模过程中的一些经验，总结成一种建模的思路和机器学习实验的设计，方便进行多角度的实验和零件更替，同时降低开发与计算的成本，以更快地得到较好模型实现预定功能。

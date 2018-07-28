@@ -10,18 +10,18 @@ Basically, since the idea has been basically raised, some of the functions have 
 ### Basic Requirements for Experimentation
 - multiple programs  
     - Several programs are generated during your experiment, so it is important to store your programs and your result. 
-- Multiple parts
+- Multiple parts  
     - In the various programs, some parts may be the same so we dont need to run again and the model can be save systematically. 
-- Log system
+- Log system  
     - Record and measure the results of various programs 
 
 ### Basic thoughts
-- Block
-    + Divide multiple step parts and connect each step by recording the process results
-- Log
-    + Record experimental results for proper comparison
-- Quickly package
-    + Directly call the stored model for process calculation
+- Block  
+    - Divide multiple step parts and connect each step by recording the process results
+- Log  
+    - Record experimental results for proper comparison
+- Quickly package  
+    - Directly call the stored model for process calculation
 
 ### File Management
 -data  

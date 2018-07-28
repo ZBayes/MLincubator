@@ -44,9 +44,6 @@ The complete English version of the document will be released soon. If you wanna
 1. 日志清除与清空
 2. 日志格式优化
 
-#### 迅速包装
-模型做好了，需要进行全量数据实验、模型上线等工程化流程，因此需要一个快速打包的工作，我的水平有限，不会做自动化打包，但是还是可以降低打包、流程化的时间，其实实质就是将之前提到的零件进行组装，形成流程化方案。
-
 ```python
 import datetime
 class logTool():
@@ -80,6 +77,9 @@ class logTool():
               (datetime.datetime.now(), note), file=self.reader)
         self.close()
 ```
+
+#### 迅速包装
+模型做好了，需要进行全量数据实验、模型上线等工程化流程，因此需要一个快速打包的工作，我的水平有限，不会做自动化打包，但是还是可以降低打包、流程化的时间，其实实质就是将之前提到的零件进行组装，形成流程化方案。
 
 ### 具体结构
 -data：数据  

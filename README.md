@@ -4,7 +4,6 @@ English version will come soon.
 ## 一种面向实验的机器学习框架
 起名字一定要霸气，技术含量不是很高，只是自己在平时做实验和建模过程中的一些经验，总结成一种建模的思路和机器学习实验的设计，方便进行多角度的实验和零件更替，同时降低开发与计算的成本，以更快地得到较好模型实现预定功能。
 
-
 ### 面向实验的基本需求
 - 需要测试和存储多种方案
     + 既然是需要进行实验，比对方案的优劣性，那在文件中，就需要存储多个方案
@@ -23,19 +22,19 @@ English version will come soon.
 
 #### 分块
 基本的机器学习建模流程如图所示：
-!(MLflow)[https://github.com/ZBayes/MLincubator/blob/master/pics/pic1.JPG]
+![MLflow](https://github.com/ZBayes/MLincubator/raw/master/pics/pic1.JPG)
 相信大家对这张图的基本结构都比较熟悉，横向我把整套机器学习建模流程分成三块，分别代表三个阶段等功能，数据探索、建立模型，模型上线三块，纵向分同样表示三块，用一切分三块大流程，数据预处理，模型建立以及计算结果三块。首先我们能够很清晰的了解一点就是，如果每一次计算都从左走到右走全流程，是非常花费时间的，再者对多个模型方案，那就需要走更多的次数，这会大大提升模型的试验运行成本，因此需要一种合适的结构进行提升。
 
 对于多步的计算方案，一般的实验会是下面这种结构来安排实验内容和代码：
-!(MLflow)[https://github.com/ZBayes/MLincubator/blob/master/pics/pic2.JPG]
+![MLflow](https://github.com/ZBayes/MLincubator/raw/master/pics/pic2.JPG)
 然而，如果进行分割，将每一个算子都分开，如下图所示：
-!(MLflow)[https://github.com/ZBayes/MLincubator/blob/master/pics/pic3.JPG]
+![MLflow](https://github.com/ZBayes/MLincubator/raw/master/pics/pic3.JPG)
 将每一个计算的结果导出，在下一步的计算结果中调用，能很大程度降低前一步计算所需要的时间，因为此时，每一个计算都只需要执行一次，这就是分块的具体含义。
 
 先下面是一个具体的例子：
-!(MLflow)[https://github.com/ZBayes/MLincubator/blob/master/pics/pic4.JPG]
+![MLflow](https://github.com/ZBayes/MLincubator/raw/master/pics/pic4.JPG)
 进行文本分类时，需要将文本转化为可以进行计算的格式，word2vector和glove都是常用的方式，此后，需要建立深度学习模型进行计算，传统的方式进行计算，则要计算4个流程，其中word2vector和glove进行了两次计算，其实对于同一套数据而言，word2vector两次计算的输出结果完全相同，不需要重复进行计算。。
-!(MLflow)[https://github.com/ZBayes/MLincubator/blob/master/pics/pic5.JPG]
+![MLflow](https://github.com/ZBayes/MLincubator/raw/master/pics/pic5.JPG)
 而如果进行分块，则可以降低模型的运算时间，主要是word2vector和glove不用进行两次计算，其实对于数据而言，方案1和方案2中，word2vector的输出结果完全相同，不需要进行计算。
 
 #### 日志
